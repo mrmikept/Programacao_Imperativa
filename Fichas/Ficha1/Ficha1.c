@@ -71,7 +71,6 @@ void trianH(int n) {
     }
     putchar('\n');
 }
-//teste
 
 void trianV(int n) {
     for (int l = 0; l < n*2 ; l++)
