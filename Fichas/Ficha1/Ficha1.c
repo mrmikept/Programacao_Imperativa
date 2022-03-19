@@ -1,23 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-void quadrado();
-void xadrez();
-void trianV();
-void trianH();
-void linha();
-void linhaEsp();
-void circulo();
-int main() {
-    int x;
-    scanf("%d",&x);
-    quadrado(x);
-    xadrez(x);
-    trianV(x);
-    trianH(x);
-    circulo(x);
-    return 0;
-}
+// Exercicio 3.1
 
 void quadrado(int n) {
     for (int l = 0; l < n; l++)
@@ -30,6 +14,8 @@ void quadrado(int n) {
     }
     putchar('\n');
 }
+
+// Exercicio 3.2
 
 void xadrez(int n) {   //funcao que escreve no terminal um tabuleiro de xadrez (ex: #_#_#) de dimensão n
     int l = 0, c = 0; //l = numero de linhas // c = qual caracter
@@ -54,6 +40,8 @@ void xadrez(int n) {   //funcao que escreve no terminal um tabuleiro de xadrez (
     }
     putchar('\n');
 }  
+
+// Exercicio 3.3
 
 void trianH(int n) {
     for (int l = 1; l <= n; l++)
@@ -87,6 +75,7 @@ void trianV(int n) {
     putchar('\n');
 }
 
+// Exercicio 3.4
 void circulo (int r) { //para fazer esta função vamos imaginar que o terminal é um eixo ortonormado xy onde a circunferencia tem centro (r,r) e diametro 2*r
     int chr = 0;
     for (int x = 0; x < r*2+1; x++) //ciclo for que muda de linha
@@ -109,7 +98,8 @@ void circulo (int r) { //para fazer esta função vamos imaginar que o terminal 
     printf("O circulo tem %d caracteres '#'.\n",chr);
 }
 
-//As mesmas funções feitas de maneira diferente(maneira mais estupida)
+
+//As mesmas funções feitas de maneira diferente(maneira menos "eficientes")
 
 void linhaEsp(int n){ //função que imprime n espaços sucessivos.
     int i = 0;
@@ -128,16 +118,16 @@ void linha(int n) {  //Funcao que escreve n vezes o '#'
     }
 }
 
-/*
+
 void quadrado(int n) {
    int l = 0;
    while ( l < n) {
        linha(n); putchar('\n');
        l++;
    }
-} */
+}
 
-/* void trianV(int n) { VERSAO FEITA DE MANEIRA ESTUPIDA
+ void trianV(int n) { VERSAO FEITA DE MANEIRA ESTUPIDA
     int l = 0;
     for (l = 1; l < n; l++) {
         linha(l);
@@ -150,7 +140,7 @@ void quadrado(int n) {
         putchar('\n');
     }
     
-} */
+}
 
 /*void trianH (int n) { VERSAO FEITA DE MANEIRA ESTUPIDA.
     int l = 0; //valor inicial, numero da linha
@@ -165,5 +155,5 @@ void quadrado(int n) {
         e--; //a cada linha o numero de espaços diminiu em 1.
     }
         
-} */
+}
 
