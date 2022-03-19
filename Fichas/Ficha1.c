@@ -127,7 +127,7 @@ void quadrado(int n) {
    }
 }
 
- void trianV(int n) { VERSAO FEITA DE MANEIRA ESTUPIDA
+ void trianV(int n) {
     int l = 0;
     for (l = 1; l < n; l++) {
         linha(l);
@@ -142,7 +142,7 @@ void quadrado(int n) {
     
 }
 
-/*void trianH (int n) { VERSAO FEITA DE MANEIRA ESTUPIDA.
+void trianH (int n) {
     int l = 0; //valor inicial, numero da linha
     int e = n-1; //e equivale ao numero de espaços por linha, se n=5 cada linha tem 4 espaços de cada lado da sequencia de #
     for (l = 0; l < n; l++)
