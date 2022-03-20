@@ -161,25 +161,11 @@ void pascal2(int v[], int N)
     printf("\n");
 }
 
-void drawPascal (int n) {
-    //for (int i = 0; i < N; i++)
-    //{
-    //    int q[i+1];
-    //    pascal2(q, i+1);
-    //}
-        for (int l = 1; l <= n; l++)
+void drawPascal (int N) {
+    for (int i = 0; i < N; i++)
     {
-        for (int c = 1; c <= n-l; c++)
-        {
-                putchar(' ');
-        }
-        for (int j=1; j<=2*l-1; j++)
-        {
-            int q[j+1];
-            pascal2(q, j+1);
-        }
-        
-        putchar('\n');
+        int q[i+1];
+        pascal2(q, i+1);
     }
     putchar('\n');
 }
